@@ -3,7 +3,7 @@ import { UnifiedConsentByOsanoSDK, Subject, ActionType  } from '@unifiedconsentb
 const accessToken = await UnifiedConsentByOsanoSDK.getToken(
   {
     /** URL of authorization services provider */
-    issuer: 'https://auth.example.com/oauth2',
+    issuer: 'https://uc.api.osano.com/v2/token/create',
     /** The  config Id */
     configId: '3959b4a3-c790-4770-8fcb-49b9e4593e1f',
     /** The Client Id */
