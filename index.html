@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Google Tag Manager -->
     <script src="https://cmp.osano.com/AzqNP2SmsdJWV8LFR/bb98b0b0-a06e-43f2-b40e-910d58c6e47d/osano.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' unifiedconsent.osano.com"> 
+    <script type="text/javascript" src="https://s.uc.osano.com/sdk/latest.min.js" crossorigin="anonymous"></script> 
+    <script type="text/javascript" crossorigin="anonymous"> 
+       const { UnifiedConsentByOsanoSDK } = window.unifiedConsentJsSdk 
+       if(window.navigator.globalPrivacyControl) { 
+         UnifiedConsentByOsanoSDK.getToken({ 
+           issuer: 'https://uc.api.osano.com/v2/token/create', 
+           configId: '3959b4a3-c790-4770-8fcb-49b9e4593e1f', 
+           customerId: 'AzqNP2SmsdJWV8LFR', 
+         }).then(token => { 
+           UnifiedConsentByOsanoSDK.registerPrivacyProtocols({ 
+             apiUrl: 'https://uc.api.osano.com/v2/', 
+             token 
+           }) 
+         }) 
+       } 
+    </script>
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
