@@ -14,6 +14,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PDXGN94G');</script>
     <!-- End Google Tag Manager -->
+    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' unifiedconsent.osano.com"> 
     <script type="text/javascript" src="https://s.uc.osano.com/sdk/latest.min.js" crossorigin="anonymous"></script> 
     <script type="text/javascript" crossorigin="anonymous"> 
        const { UnifiedConsentByOsanoSDK } = window.unifiedConsentJsSdk 
@@ -72,7 +73,12 @@
         </div>
     </nav>
     <div class="embed-responsive embed-responsive-16by9">
-       <iframe class="embed-responsive-item" src="https://unifiedconsent.osano.com/600/" /></iframe>
+       <iframe id="osano-uc-iframe" src="https://unifiedconsent.osano.com/600/"></iframe> 
+        <script type="text/javascript" crossorigin="anonymous"> 
+           window.unifiedConsentJsSdk.UnifiedConsentByOsanoSDK.initEmbeddedParent({ 
+             targetIframe: document.getElementById('osano-uc-iframe') 
+           }); 
+        </script>
     </div>
     <footer class="bg-body-tertiary text-white text-center py-3">
         <div class="container">
