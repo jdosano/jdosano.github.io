@@ -3,88 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acme Comics</title>
+    <title>Osano Playground - TrustHub</title>
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' unifiedconsent.osano.com"> 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PDXGN94G');</script>
-    <!-- End Google Tag Manager -->
-    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' unifiedconsent.osano.com"> 
-    <script type="text/javascript" src="https://s.uc.osano.com/sdk/latest.min.js" crossorigin="anonymous"></script> 
-    <script type="text/javascript" crossorigin="anonymous"> 
-       const { UnifiedConsentByOsanoSDK } = window.unifiedConsentJsSdk 
-       if(window.navigator.globalPrivacyControl) { 
-         UnifiedConsentByOsanoSDK.getToken({ 
-           issuer: 'https://uc.api.osano.com/v2/token/create', 
-           configId: '3959b4a3-c790-4770-8fcb-49b9e4593e1f', 
-           customerId: 'AzqNP2SmsdJWV8LFR', 
-         }).then(token => { 
-           UnifiedConsentByOsanoSDK.registerPrivacyProtocols({ 
-             apiUrl: 'https://uc.api.osano.com/v2/', 
-             token 
-           }) 
-         }) 
-       } 
-    </script>
-    
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <script src="https://cmp.osano.com/AzqNP2SmsdJWV8LFR/bb98b0b0-a06e-43f2-b40e-910d58c6e47d/osano.js"></script>
     <script>
       !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="Wwagt19BAcHI9vKOIs1utJNHEYFsxG6D";;analytics.SNIPPET_VERSION="5.2.0";
       analytics.load("Wwagt19BAcHI9vKOIs1utJNHEYFsxG6D");
       analytics.page();
       }}();
     </script>
+  
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDXGN94G"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
-    <!-- End Google Tag Manager (noscript)
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Acme Comics</a>
+            <a class="navbar-brand" href="#">Osano Playground</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Comics</a>
+                        <a class="nav-link" href="./cookie-consent.html">Cookie Consent</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Graphic Novels</a>
+                        <a class="nav-link" href="./unified-consent.html">Unified Consent</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Merchandise</a>
+                        <a class="nav-link" href="./subject-rights.html">Subject Rights</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Contact</a>
+                        <a class="nav-link" href="./trusthub.html"><strong>TrustHub</strong></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="embed-responsive embed-responsive-16by9">
-       <iframe id="osano-uc-iframe" src="https://unifiedconsent.osano.com/600/"></iframe> 
-        <script type="text/javascript" crossorigin="anonymous"> 
-           window.unifiedConsentJsSdk.UnifiedConsentByOsanoSDK.initEmbeddedParent({ 
-             targetIframe: document.getElementById('osano-uc-iframe') 
-           }); 
-        </script>
-    </div>
+    <p class="text-center">Click one of the page links above to test a module as an end-user.</p>
+    <iframe class="iframe-style" src="https://acme.trusthub.com/"></iframe>
     <footer class="bg-body-tertiary text-white text-center py-3">
         <div class="container">
             <p>© 2024 Your Company. All rights reserved.</p>
             <p>123 Main St, City, State 12345</p>
-            <p><a href="privacy-choices">Your Privacy Choices</a></p>
+            <p><a href="./unified-consent.html">Your Privacy Choices</a></p>
         </div>
     </footer>
 
