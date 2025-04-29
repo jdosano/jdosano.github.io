@@ -79,7 +79,29 @@
             </div>
         </div>
     </nav>
+    
     <p class="text-center">Click one of the page links above to test a module as an end-user.</p>
+    <hr />
+    <p class="text-center">Click one of the buttons below to test out the CMP Javascript API.</p>
+    <br/>
+    <div class="container-fluid">
+        <div class="row p-3">
+            <div class="col-4">
+                <span class="mr-3 ml-3 text-center">Shows the Cookie Consent Banner</span><a><button type="button" onclick="window.Osano.cm.showDialog()" class="btn btn-primary">showDialog()</button></a>
+            </div>
+            <div class="col-4">
+                <span class="mr-3 ml-3 text-center">Hides the Cookie Consent Banner</span><a><button type="button" onclick="window.Osano.cm.hideDialog()" class="btn btn-primary">hideDialog()</button></a>
+            </div>
+            <div class="">
+                <span class="mr-3 ml-3 text-center">Shows the Manage Preferences Drawer</span><a><button type="button" onclick="window.Osano.cm.showDrawer()"class="btn btn-primary">showDrawer()</button></a>
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col-4">
+                <span class="mr-3 ml-3 text-center">Hides the Manage Preferences Drawer</span><a><button type="button" onclick="window.Osano.cm.hideDrawer()"class="btn btn-primary">hideDrawer()</button></a>
+            </div>
+        </div>
+    </div>
     <footer class="bg-body-tertiary text-white text-center py-3">
         <div class="container">
             <p>© 2024 Your Company. All rights reserved.</p>
