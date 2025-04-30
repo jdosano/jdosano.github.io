@@ -1,68 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osano Playground - Home</title>
+    <link rel="icon" type="image/x-icon" href="./images/acme_logo_favicon.png">
     <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
     <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer ||[];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('consent','default',{
-        'ad_storage':'denied',
-        'analytics_storage':'denied',
-        'ad_user_data':'denied',
-        'ad_personalization':'denied',
-        'personalization_storage':'denied',
-        'functionality_storage':'granted',
-        'security_storage':'granted',
-        'wait_for_update': 500
-      });
-      gtag("set", "ads_data_redaction", true);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'personalization_storage': 'denied',
+            'functionality_storage': 'granted',
+            'security_storage': 'granted',
+            'wait_for_update': 500
+        });
+        gtag("set", "ads_data_redaction", true);
+    </script>
+    <script>
+        (function (w, o, d) {
+            w[o] =
+                w[o] ||
+                function () {
+                    w[o][d].push(arguments);
+                };
+            w[o][d] = w[o][d] || [];
+        })(window, 'Osano', 'data');
+
+        window.Osano('onInitialized', consent => console.log('Osano.js initialized', consent));
+        window.Osano('onCookieBlocked', cookie =>
+            console.debug('Osano.js blocked cookie:', cookie)
+        );
+        window.Osano('userData', 'Frederick Fakerton');
     </script>
     <script src="https://cmp.osano.com/AzqNP2SmsdJWV8LFR/bb98b0b0-a06e-43f2-b40e-910d58c6e47d/osano.js"></script>
     <script>
-      !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="Wwagt19BAcHI9vKOIs1utJNHEYFsxG6D";;analytics.SNIPPET_VERSION="5.2.0";
-      analytics.load("Wwagt19BAcHI9vKOIs1utJNHEYFsxG6D");
-      analytics.page();
-      }}();
+        !function () {
+            var i = "analytics", analytics = window[i] = window[i] || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+                analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "screen", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware", "register"]; analytics.factory = function (e) { return function () { if (window[i].initialized) return window[i][e].apply(window[i], arguments); var n = Array.prototype.slice.call(arguments); if (["track", "screen", "alias", "group", "page", "identify"].indexOf(e) > -1) { var c = document.querySelector("link[rel='canonical']"); n.push({ __t: "bpc", c: c && c.getAttribute("href") || void 0, p: location.pathname, u: location.href, s: location.search, t: document.title, r: document.referrer }) } n.unshift(e); analytics.push(n); return analytics } }; for (var n = 0; n < analytics.methods.length; n++) { var key = analytics.methods[n]; analytics[key] = analytics.factory(key) } analytics.load = function (key, n) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.setAttribute("data-global-segment-analytics-key", i); t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js"; var r = document.getElementsByTagName("script")[0]; r.parentNode.insertBefore(t, r); analytics._loadOptions = n }; analytics._writeKey = "Wwagt19BAcHI9vKOIs1utJNHEYFsxG6D";; analytics.SNIPPET_VERSION = "5.2.0";
+                analytics.load("Wwagt19BAcHI9vKOIs1utJNHEYFsxG6D");
+                analytics.page();
+            }
+        }();
     </script>
-    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' unifiedconsent.osano.com"> 
-    <script type="text/javascript" src="https://s.uc.osano.com/sdk/latest.min.js" crossorigin="anonymous"></script> 
-    <script type="text/javascript" crossorigin="anonymous"> 
-       const { UnifiedConsentByOsanoSDK } = window.unifiedConsentJsSdk 
-       if(window.navigator.globalPrivacyControl) { 
-         UnifiedConsentByOsanoSDK.getToken({ 
-           issuer: 'https://uc.api.osano.com/v2/token/create', 
-           configId: '3959b4a3-c790-4770-8fcb-49b9e4593e1f', 
-           customerId: 'AzqNP2SmsdJWV8LFR', 
-         }).then(token => { 
-           UnifiedConsentByOsanoSDK.registerPrivacyProtocols({ 
-             apiUrl: 'https://uc.api.osano.com/v2/', 
-             token 
-           }) 
-         }) 
-       } 
+    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' unifiedconsent.osano.com">
+    <script type="text/javascript" src="https://s.uc.osano.com/sdk/latest.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" crossorigin="anonymous">
+        const { UnifiedConsentByOsanoSDK } = window.unifiedConsentJsSdk
+        if (window.navigator.globalPrivacyControl) {
+            UnifiedConsentByOsanoSDK.getToken({
+                issuer: 'https://uc.api.osano.com/v2/token/create',
+                configId: '3959b4a3-c790-4770-8fcb-49b9e4593e1f',
+                customerId: 'AzqNP2SmsdJWV8LFR',
+            }).then(token => {
+                UnifiedConsentByOsanoSDK.registerPrivacyProtocols({
+                    apiUrl: 'https://uc.api.osano.com/v2/',
+                    token
+                })
+            })
+        } 
     </script>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PDXGN94G');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PDXGN94G');</script>
     <!-- End Google Tag Manager -->
 </head>
+
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDXGN94G"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDXGN94G" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">Osano Playground</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -87,6 +115,11 @@
         </div>
     </nav>
     <p class="text-center">Click one of the page links above to test a module as an end-user.</p>
+    <div class="text-center main-img-div">
+        <img class="img-fluid rounded mx-auto d-block img-cool-border" src="./images/cookies-doing-too-much.jpeg"
+            alt="cookies on the playground">
+    </div>
+
     <footer class="bg-body-tertiary text-white text-center py-3">
         <div class="container">
             <p>© 2024 Your Company. All rights reserved.</p>
@@ -97,8 +130,15 @@
 
 
     <!-- Include Bootstrap JS (optional) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

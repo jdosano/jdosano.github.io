@@ -21,7 +21,7 @@ const client = UnifiedConsentByOsanoSDK.createClient({
 // Example with anonymous Subject
 await client.createConsent({
   tags: ['marvel', 'movies'],
-  actions: [{ target: 'navigation-system', vendor: 'general-vendor', action: ActionType.Accept }]
+  actions: [{ target: 'navigation-system', vendor: 'general-vendor', action: ActionType.Accept }],
   attributes: [{platform: 'Linux x86_64'}],
   subject: Subject.verified('a-unique-id-of-this-subject')
 })

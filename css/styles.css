@@ -4,3 +4,26 @@
     width: 90%;
     height: 800px;
 }
+
+.cool-border {
+    border: 2px solid #00f0ff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+  }
+
+  .img-cool-border {
+    border: 2px solid #00f0ff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+    height: 70%;
+  }
+
+  .main-img-div {
+    height: 900px;
+  }
