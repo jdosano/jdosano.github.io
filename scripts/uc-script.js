@@ -1,5 +1,3 @@
-import { UnifiedConsentByOsanoSDK, Subject, ActionType  } from '@unifiedconsentbyosano/cmp-javascript-sdk'
-
 const accessToken = await UnifiedConsentByOsanoSDK.getToken(
   {
     /** URL of authorization services provider */
