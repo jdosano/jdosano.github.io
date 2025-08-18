@@ -14,13 +14,10 @@
     <script src="https://cmp-ci.osano.com/2skdb1YDRiZvJfB1dPK/ea0de9e8-b526-4a6f-8cbc-d48131bd4208/osano.js"></script>
     <script src="https://cmp-ci.osano.com/osano.segment.js"></script>
     <script>
-        !function () {
-            var i = "analytics", analytics = window[i] = window[i] || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
-                analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "screen", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware", "register"]; analytics.factory = function (e) { return function () { if (window[i].initialized) return window[i][e].apply(window[i], arguments); var n = Array.prototype.slice.call(arguments); if (["track", "screen", "alias", "group", "page", "identify"].indexOf(e) > -1) { var c = document.querySelector("link[rel='canonical']"); n.push({ __t: "bpc", c: c && c.getAttribute("href") || void 0, p: location.pathname, u: location.href, s: location.search, t: document.title, r: document.referrer }) } n.unshift(e); analytics.push(n); return analytics } }; for (var n = 0; n < analytics.methods.length; n++) { var key = analytics.methods[n]; analytics[key] = analytics.factory(key) } analytics.load = function (key, n) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.setAttribute("data-global-segment-analytics-key", i); t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js"; var r = document.getElementsByTagName("script")[0]; r.parentNode.insertBefore(t, r); analytics._loadOptions = n }; analytics._writeKey = "Wwagt19BAcHI9vKOIs1utJNHEYFsxG6D";; analytics.SNIPPET_VERSION = "5.2.0";
-                withCMP(analytics).load("Wwagt19BAcHI9vKOIs1utJNHEYFsxG6D");
-                analytics.page();
-            }
-        }();
+      !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="Wwagt19BAcHI9vKOIs1utJNHEYFsxG6D";;analytics.SNIPPET_VERSION="5.2.0";
+          withCMP(analytics).load("Wwagt19BAcHI9vKOIs1utJNHEYFsxG6D");
+          analytics.page();
+          }}();
     </script>
     <!-- commenting out for segment test --> 
 <!--     <script>
@@ -38,7 +35,7 @@
         });
         gtag("set", "ads_data_redaction", true);
     </script> -->
-    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' unifiedconsent.osano.com">
+<!--     <meta http-equiv="Content-Security-Policy" content="frame-src 'self' unifiedconsent.osano.com">
     <script type="text/javascript" src="https://s.uc.osano.com/sdk/latest.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript" crossorigin="anonymous">
         const { UnifiedConsentByOsanoSDK } = window.unifiedConsentJsSdk
@@ -54,7 +51,7 @@
                 })
             })
         } 
-    </script>
+    </script> -->
     <!-- commenting out for segment test --> 
     <!--     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
