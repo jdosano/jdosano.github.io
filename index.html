@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Preload Osano -->
+    <script>
+            (function (w, o, d) {
+                w[o] =
+                    w[o] ||
+                    function () {
+                        w[o][d].push(arguments);
+                    };
+                w[o][d] = w[o][d] || [];
+            })(window, 'Osano', 'data');
+
+            window.Osano('onInitialized', consent => console.log('Osano.js initialized', consent));
+            window.Osano('onCookieBlocked', cookie =>
+                console.debug('Osano.js blocked cookie:', cookie)
+            );
+        </script>
+    
     <!-- Osano Cookie Consent Script -->
     <script src="https://cmp.osano.com/AzqNP2SmsdJWV8LFR/bb98b0b0-a06e-43f2-b40e-910d58c6e47d/osano.js"></script>
     <script src="./scripts/essential-tester.js"></script>
